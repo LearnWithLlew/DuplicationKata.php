@@ -2,6 +2,10 @@
 
 /vendor/*
 /test-reports/*
+.idea
+.phpunit.result.cache
+
+
 /config/app.php
 
 /tmp/cache/models/*
