@@ -28,3 +28,4 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+*.received.*
