@@ -5,6 +5,7 @@ use ApprovalTests\Approvals;
 use LearnWithLlew\Lesson1AStraight;
 use LearnWithLlew\Lesson2AVariable;
 use LearnWithLlew\Lesson2B;
+use LearnWithLlew\Lesson3AHigherOrderFunctions;
 use PHPUnit\Framework\TestCase;
 
 class RegressionTest extends TestCase
@@ -40,6 +41,18 @@ class RegressionTest extends TestCase
         $lesson->singSong(1, $names);
         $lesson->singSong(2, $names);
         $lesson->singSong(3, $names);
+        Approvals::verifyString($lesson->song);
+    }
+
+    /** @test */
+    public function shouldTestLesson3A()
+    {
+        // Arrange
+        $lesson = new Lesson3AHigherOrderFunctions();
+
+        // Act
+        $lesson->singCheers();
+        // Assert
         Approvals::verifyString($lesson->song);
     }
 }
