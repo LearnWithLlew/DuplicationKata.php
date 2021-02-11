@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace LearningWithLlew\Tests;
 
 use ApprovalTests\Approvals;
@@ -34,6 +36,7 @@ class RegressionTest extends TestCase
         // Assert
         Approvals::verifyString($lesson->song);
     }
+
     /** @test */
     public function shouldTestLesson2B()
     {
@@ -56,6 +59,7 @@ class RegressionTest extends TestCase
         // Assert
         Approvals::verifyString($lesson->song);
     }
+
     /** @test */
     public function shouldTestLesson3B()
     {
