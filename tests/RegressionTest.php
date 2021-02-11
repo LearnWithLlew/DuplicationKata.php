@@ -36,6 +36,7 @@ class RegressionTest extends TestCase
         // Assert
         Approvals::verifyString($lesson->song);
     }
+
     /** @test */
     public function shouldTestLesson2B()
     {
@@ -58,6 +59,7 @@ class RegressionTest extends TestCase
         // Assert
         Approvals::verifyString($lesson->song);
     }
+
     /** @test */
     public function shouldTestLesson3B()
     {
