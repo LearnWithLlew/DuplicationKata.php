@@ -3,8 +3,6 @@
     "description": "Kata",
     "type": "project",
     "license": "apache2",
-    "minimum-stability": "stable",
-    "require": {},
     "scripts" : {
         "test": "phpunit"
     },
@@ -19,7 +17,7 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "approvals/approval-tests": "^1.4"
+        "phpunit/phpunit": ">=5.4.0",
+        "approvals/approval-tests": "dev-Main"
     }
 }
